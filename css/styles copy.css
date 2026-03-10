@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: white;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #938787;
+  font-family: 'poppins', sans-serif;
+}
+
+
+.logo {
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+
+
+}
+
+.nav-links {
+
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+
+}
+
+.nav-links li {
+  list-style-type: none;
+
+}
+
+.nav-links a:hover {
+
+  color: #545454;
+}
+
+.nav-links a {
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #545454;
+  margin: 2px;
+  transition: all 0.3s ease;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #F3F3F3;
+  padding: 3em;
+}
+
+.logo-img {
+  padding-bottom: 2em;
+}
+
+.right-footer {
+  display: block;
+
+}
+
+
+
+
+
+
+
+
+.built-by {
+
+  justify-content: baseline;
+}
+
+
+
+
+
+
+/* ***************************************************************************************************************************************************************************
+    curve for images
+  *************************************************************************************************************************************************************************** */
+
+
+.curveUpColor,
+.curveDownColor {
+  fill: #fff;
+  stroke: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.curveUpColor {
+  margin-top: -100px;
+}
+
+.curveDownColor {
+  margin-bottom: -100px;
+}
+
+.curveMapUp {
+  margin-top: 52px;
+}
+
+.curveMapDown {
+  margin-top: -238px;
+}
+
+
+
+
+
+/* ***************************************************************************************************************************************************************************
+    Hero 
+  ************************************************************************************************************************************************************************************************************************************ */
+
+.hero {
+  z-index: -1;
+  clear: both;
+  background-image: url('../images/hero-home.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+
+
+.hero .text {
+  margin: 0 auto;
+  text-align: right;
+  margin-right: 2em;
+  width: 50%;
+  text-align: left;
+  height: 800px;
+  padding-top: 15em;
+  padding-left: 5em;
+}
+
+
+.main-content {
+
+  background-color: white;
+  height: 300px;
+}
+
+
+
+.footer {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  min-height: 20vh;
+  width: 100%;
+  background-color: white;
+  padding-top: 5em;
+  padding-bottom: 2em;
+  background-color: #F3F3F3;
+
+
+}
+
+.logo-footer img {
+  padding-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+  .nav-links {
+    width: 60%;
+
+  }
+
+  @media screen and (max-width:768px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    .footer-container {
+      display: block;
+    }
+
+    .logo-img {
+      width: 150px;
+      padding-top: 30px;
+    }
+
+
+
+    .nav-links {
+      z-index: 2;
+      position: absolute;
+      right: 0px;
+      height: 100vh;
+      top: 0vh;
+      background-color: #F89400;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+      opacity: 0;
+      margin-left: 2em;
+    }
+
+    .burger {
+      z-index: 4;
+      display: block;
+
+
+    }
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+  position: fixed;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+
+.toggle .line2 {
+  opacity: 0;
+
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+
+}

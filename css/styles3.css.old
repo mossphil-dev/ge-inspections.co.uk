@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+*{
+  margin:0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  
+  
+}
+
+
+
+
+
+  /* *********************************************************
+    Header
+  ********************************************************* */
+
+  header {
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+
+  
+  }
+
+
+  header svg {
+    width: 3em;
+    margin-top: -.6em;
+    cursor: pointer;
+  }
+
+
+  /* *********************************************************
+    Nav
+  ********************************************************* */
+
+
+  nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    text-transform: UPPERCASE;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  }
+  
+ 
+  nav UL {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+   
+  }
+  
+  nav UL a {
+    color: black;
+    padding: .75em 2em;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+  nav UL a:hover {
+    color: #e1e1e1;
+  }
+
+
+  /* *********************************************************
+    curve for images
+  ********************************************************* */
+
+
+  .curveUpColor, .curveDownColor {
+    fill: #fff;
+    stroke: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .curveUpColor {
+    margin-top: -100px;
+  }
+  
+  .curveDownColor {
+    margin-bottom: -100px;
+  }
+  
+  .curveMapUp {
+    margin-top: 52px;
+  }
+  
+  .curveMapDown {
+    margin-top: -238px;
+  }
+  
+  
+  
+  
+  
+  /* *********************************************************
+    Hero 
+  ********************************************************* */
+  
+  .hero {
+    z-index: -1;
+    clear: both;
+    background-image: url('../images/hero-home.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center top;
+  }
+  
+  
+  
+  .hero .text{
+    margin: 0 auto;
+    text-align: right;
+    margin-right: 2em;
+    width: 50%;
+    text-align: left;
+    height: 800px;
+    padding-top: 15em;
+    padding-left: 5em;
+  }
+  
+
+
+
+
+
+  @media only screen and (min-width: 680px) {
+
+  
+
+
+    header svg{
+      display: none;
+    }
+
+    nav {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      position: unset;
+      display: block;
+      width: auto;
+      height: auto;
+      background: none;
+      
+    }
+    
+    nav svg.close {
+      display: none;
+    }
+  }

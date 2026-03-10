@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+
+
+
+}
+
+
+.container-hero {
+
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: grey;
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: 100;
+
+}
+
+.hero h2 {
+  color: white;
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.hero p {
+  color: white;
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+.wrapper {
+  background-color: white;
+}
+
+.hero a {
+  text-decoration: none;
+  color: grey;
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: 100;
+}
+
+.hero a:hover {
+  text-decoration: none;
+  color: lightgrey;
+  font-family: 'Abril Fatface', sans-serif;
+  font-weight: 100;
+}
+
+p {
+  color: grey;
+  font-family: 'poppins', sans-serif;
+  font-size: 12px;
+
+
+}
+
+
+
+
+.main-text {
+  color: #545454;
+}
+
+.main-image3 {
+  display: none;
+}
+
+.nav-links {
+
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+
+}
+
+.nav-links li {
+  list-style-type: none;
+
+}
+
+.nav-links a:hover {
+
+  color: orange;
+}
+
+.nav-links a {
+  color: #545454;
+  text-decoration: none;
+
+
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  padding-right: 2em;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #545454;
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+
+.logo-main {
+  width: 250px;
+  padding-top: 10px;
+}
+
+.holdingcontainer {
+  max-width: 100%;
+  display: flex;
+  background: #ffc728;
+  padding: 30px;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+}
+
+
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #F3F3F3;
+  padding: 3em;
+}
+
+.logo-img {
+
+  padding-bottom: 2em;
+}
+
+.right-footer {
+  display: block;
+  text-align: justify;
+
+}
+
+.main-text-area {
+  background-color: white;
+}
+
+.content {
+  background-color: white;
+}
+
+
+
+.social-icons a,
+p {
+  color: grey;
+  text-decoration: none;
+
+
+}
+
+.built-by {
+  margin-top: 10px;
+}
+
+.social-icon-img {
+
+  vertical-align: middle;
+  padding-right: 0.2em;
+
+}
+
+.right-footer {
+
+  text-align: right;
+
+}
+
+
+
+
+/* ***************************************************************************************************************************************************************************
+    curve for images
+  *************************************************************************************************************************************************************************** */
+
+
+.curveUpColor,
+.curveDownColor {
+  fill: #fff;
+  stroke: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  height: 30px;
+
+}
+
+.curveUpColor {
+  margin-top: -30px;
+  width: 100%;
+}
+
+.curveDownColor {
+  margin-bottom: -100px;
+
+}
+
+.curveMapUp {
+  margin-top: 52px;
+
+}
+
+.curveMapDown {
+  margin-top: -238px;
+
+
+}
+
+
+
+
+
+/* ***************************************************************************************************************************************************************************
+    Hero 
+  ************************************************************************************************************************************************************************************************************************************ */
+
+.hero {
+  z-index: -1000;
+  clear: both;
+  background-image: url('../images/hero-home.jpg');
+  background-repeat: repeat;
+  width: 100%;
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center top;
+
+}
+
+
+
+.hero .text {
+  margin: 0 auto;
+  text-align: right;
+  margin-right: 30px;
+  width: 50%;
+  text-align: left;
+  height: 700px;
+  padding-top: 60px;
+  padding-left: 5em;
+}
+
+
+.badges-section {
+
+  background-color: white;
+  height: 350px;
+  padding: 100px;
+
+
+}
+
+
+
+
+.badges-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.content {
+
+  display: block;
+  background-color: #fff;
+
+
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: red;
+
+}
+
+
+
+
+.main-layout {
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.main-image-area {
+  background-color: #fff;
+}
+
+
+.main-image {
+  width: 400px;
+  height: auto;
+  background-color: #fff;
+}
+
+.main-image2 {
+  width: 400px;
+  height: auto;
+}
+
+
+
+.badge-img {
+  width: 150px;
+  padding-top: 1.5em;
+  height: auto
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+
+.main-text-right {
+  padding-left: 80px;
+  background-color: #fff;
+}
+
+.main-text-left {
+  padding-right: 80px;
+  background-color: #fff;
+}
+
+
+
+.main-text-head {
+
+  padding-left: 80px;
+  padding-bottom: 50px;
+}
+
+ul {
+  list-style: none;
+  /* Remove default bullets */
+}
+
+
+li {
+  color: grey;
+}
+
+ul.list-style li::before {
+  content: "\25A0";
+  padding-left: 100px;
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: orange;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+hr {
+
+  width: 100%;
+  background-color: orange;
+  height: 1px;
+  border: none;
+
+
+
+}
+
+.badges-header {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.footer {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  min-height: 20vh;
+  width: 100%;
+  background-color: white;
+  padding-top: 6em;
+  padding-bottom: 2em;
+
+
+
+
+}
+
+.logo-footer img {
+  padding-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: green;
+  }
+
+
+
+}
+
+
+/* @media screen and (max-width:1024px) {
+  .nav-links {
+    width: 60%;
+
+  } */
+
+@media screen and (max-width:950px) {
+
+
+  .main-content {
+    display: block;
+    text-align: center;
+
+
+
+  }
+
+  .logo-main {
+    width: 150px;
+  }
+
+  .badge-img {
+    width: 100px;
+    padding-top: 1.5em;
+    height: auto;
+  }
+
+  .right-footer {
+
+    text-align: center;
+
+  }
+
+  .hero .text {
+    margin: 0 auto;
+    text-align: right;
+    margin-right: 30px;
+    width: 50%;
+    text-align: left;
+    height: 700px;
+    padding-top: 60px;
+    padding-left: 1em;
+  }
+
+
+
+  .badges-section {
+
+    background-color: white;
+    height: 350px;
+    padding: 30px;
+
+
+  }
+
+
+  .hero h2 {
+
+    font-size: 2rem;
+
+    ;
+  }
+
+  .hero p {
+
+    font-size: 1rem;
+  }
+
+
+
+  .main-image {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+  }
+
+  .main-image2 {
+    display: none;
+  }
+
+  .main-image3 {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
+  .main-text-right {
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+  }
+
+  .main-text-left {
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+
+  .holdingcontainer,
+  .footer-container {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+
+  p {
+    font-size: 12px;
+    ;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+
+  .footer-container {
+    display: block;
+  }
+
+  .logo-img {
+    width: 200px;
+    padding-top: 30px;
+
+
+  }
+
+  .left-footer {
+    text-align: center;
+  }
+
+  .nav-links {
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 0vh;
+    background-color: #F89400;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+    margin-left: 2em;
+  }
+
+  .burger {
+    z-index: 4;
+    display: block;
+
+
+  }
+}
+
+
+.nav-active {
+  transform: translateX(0%);
+  position: fixed;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+
+.toggle .line2 {
+  opacity: 0;
+
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+
+}
